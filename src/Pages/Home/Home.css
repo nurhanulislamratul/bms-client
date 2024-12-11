@@ -1,0 +1,114 @@
+.building{
+    position: relative;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    
+}
+
+.building::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #333c4d;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #333c4d;
+
+    animation: animate infinite 8s linear;
+}
+
+@keyframes animate {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+
+    70%,90%{
+        width: 38.5%;
+    }
+}
+@media  screen and (max-width: 1024px) {
+
+    @keyframes animate {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+    
+        70%,90%{
+            width: 38.5%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px){
+
+ 
+    @keyframes animate {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+    
+        70%,90%{
+            width: 46.5%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:425px){
+
+    .building{
+       
+        font-size: 2em;
+
+
+        
+    }
+
+
+
+    @keyframes animate {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+    
+        70%,90%{
+            width: 31%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:375px){
+
+    .building{
+       
+        font-size: 2em;
+
+
+        
+    }
+
+
+
+    @keyframes animate {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+    
+        70%,90%{
+            width: 31%;
+        }
+    }
+    
+}
+
+
+
+
